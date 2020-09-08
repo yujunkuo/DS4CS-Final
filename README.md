@@ -2,17 +2,13 @@
 
 
 
-### Topic
+## Topic
 
----
-
-#### Malware Detection with Static Analysis & Model Ensemble
+### Malware Detection with Static Analysis & Model Ensemble
 
 
 
-### Introduction
-
----
+## Introduction
 
 When it comes to Malware Detection, there are many different ways to implement it, and Static Analysis is one of them. 
 
@@ -30,9 +26,7 @@ In other word, I want to know will **Model Ensemble** perform better than **Indi
 
 
 
-### Literature Review
-
----
+## Literature Review
 
 **1. Ensembling ConvNets using Keras**
 
@@ -44,9 +38,7 @@ In other word, I want to know will **Model Ensemble** perform better than **Indi
 
 
 
-### Dataset
-
----
+## Dataset
 
 > [1] Angelo Oliveira, "Malware Analysis Datasets: PE Section Headers", IEEE Dataport, 2019. [Online]. Available: http://dx.doi.org/10.21227/2czh-es14. Accessed: Jun. 13, 2020. 
 
@@ -56,20 +48,19 @@ In other word, I want to know will **Model Ensemble** perform better than **Indi
 
 
 
-### Data Preprocessing
-
----
+## Data Preprocessing
 
 1. Merge DataFrame by Hash Value & drop duplicated observations
+
 2. Add new column, which is calculated from original columns
+
 3. Do some *EDA (Exploratory Data Analysis)*
+
 4. Because data is imbalanced, we need resample. I use *ADASYN* to do oversampling.
 
 
 
-### Individual Models Training Result
-
----
+## Individual Models Training Result
 
 - **First Model: PE Section Headers**
   - Standardization
@@ -94,9 +85,7 @@ In other word, I want to know will **Model Ensemble** perform better than **Indi
 
 
 
-### Model Ensemble
-
----
+## Model Ensemble
 
 First, ensemble these three models, then add **Dense Layer (Fully Connected Layer) with 16 neurons** & **Dense Layer (Fully Connected Layer) with 1 neurons** as final output.
 
@@ -107,9 +96,7 @@ The result of Ensemble Model:
 
 
 
-### Conclusion
-
----
+## Conclusion
 
 From the model training results, it can be seen that **Model Ensemble is indeed helpful for improving the Accuracy of Malware Detection**. 
 
