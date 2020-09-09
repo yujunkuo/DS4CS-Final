@@ -94,6 +94,13 @@ The result of Ensemble Model:
 - Use Adam optimizer with learning rate = 0.0003 and Early stopping
 - Result : Training Accuracy: 98.58% , Validation Accuracy: 95.99%
 
+| Model                        | Training Accuracy | Validation Accuracy |
+| :--------------------------- | :---------------- | ------------------- |
+| PE Section Headers with DNN  | 89.71%            | 58.46%              |
+| Top-1000 PE Imports with DNN | 97.97%            | 94.26%              |
+| Raw PE as Image with CNN     | 95.11%            | 85.1%               |
+| **Ensemble Model**           | **98.58%**        | **95.99%**          |
+
 
 
 ## Conclusion
